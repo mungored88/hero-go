@@ -111,43 +111,43 @@
     <Compile Include="Assets\script\Player\sound.cs" />
     <None Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\Anywhere Door\ScreenCutoutShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -327,7 +327,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="clipper_library">
-      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/munguia mariano programacion 1 final/Library/PackageCache/com.unity.cinemachine@2.7.1/Runtime/ThirdParty/clipper_library.dll</HintPath>
+      <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/PackageCache/com.unity.cinemachine@2.7.1/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
