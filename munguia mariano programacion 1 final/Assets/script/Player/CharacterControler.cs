@@ -83,7 +83,7 @@ public class CharacterControler : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 MainAnimation.SetTrigger("attackmovement");
-
+                MainAnimation.Play("atack 1");
                 Debug.Log("attack on");
 
                 playersound.SoundPlay(playersound.clips[2]); //audio
