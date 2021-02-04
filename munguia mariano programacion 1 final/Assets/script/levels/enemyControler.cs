@@ -22,6 +22,7 @@ public class enemyControler : MonoBehaviour
     public LayerMask attackMask;
     public Transform Player;
     
+    
 
 
 
@@ -49,6 +50,7 @@ public class enemyControler : MonoBehaviour
     {
         if(!movement)
         {
+            attackOffset = new Vector3(transform.position.x - 0.7f, transform.position.y, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, EndMove.transform.position, speed * Time.deltaTime);
             //Debug.Log(transform.position+""+EndMove.transform.position);
             if(transform.position == EndMove.transform.position)
@@ -61,7 +63,8 @@ public class enemyControler : MonoBehaviour
 
         if (movement)
         {
-           // Debug.Log("c");
+            // Debug.Log("c");
+            attackOffset = new Vector3(transform.position.x + 0.7f, transform.position.y, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, StartMove.transform.position, speed * Time.deltaTime);
             if (transform.position == StartMove.transform.position)
             {
@@ -125,9 +128,8 @@ public class enemyControler : MonoBehaviour
     }
     private void OnDrawGizmosSelected()
     {
-        Vector3 pos = transform.position;
-        pos += transform.right * attackOffset.x;
-        pos += transform.up * attackOffset.y;
-        Gizmos.DrawWireSphere(pos, attackRange);
+       
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackOffset, attackRange);
     }
 }

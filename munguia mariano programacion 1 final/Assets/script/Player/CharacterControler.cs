@@ -63,11 +63,13 @@ public class CharacterControler : MonoBehaviour
         //Move
         if (horizontal < 0)
         {
-            MainSprite.flipX = false;           
+            MainSprite.flipX = false;
+            attackPoint.position = new Vector3(transform.position.x - 0.50f, transform.position.y, transform.position.z);
         }
         else if (horizontal > 0)
         {
-            MainSprite.flipX = true;            
+            MainSprite.flipX = true;
+            attackPoint.position = new Vector3(transform.position.x + 0.50f, transform.position.y, transform.position.z);
         }
         
         MainAnimation.SetFloat("walk speed", Mathf.Abs(horizontal));

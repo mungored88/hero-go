@@ -90,7 +90,7 @@ Transform:
   m_GameObject: {fileID: 8925005853213006648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.49, y: 3.26, z: 0}
-  m_LocalScale: {x: 10.777718, y: 10.777718, z: 10.777718}
+  m_LocalScale: {x: 3.6105354, y: 3.6105354, z: 3.6105354}
   m_Children:
   - {fileID: 8244123461654384241}
   - {fileID: 1905547352464286721}
@@ -181,7 +181,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07894347, y: -0.08142205}
+  m_Offset: {x: 0.055393897, y: -0.08142205}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -192,7 +192,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13838737, y: 0.19202219}
+  m_Size: {x: 0.18548657, y: 0.19202219}
   m_EdgeRadius: 0
 --- !u!95 &1501783110
 Animator:
@@ -232,8 +232,8 @@ MonoBehaviour:
   speed: 4
   EnemyLife: 2
   attackDamage: 1
-  attackOffset: {x: -1, y: 0, z: 0}
-  attackRange: 1.63
+  attackOffset: {x: 0, y: 0, z: 0}
+  attackRange: 0.8
   attackMask:
     serializedVersion: 2
     m_Bits: 512

@@ -1301,31 +1301,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy_4
       objectReference: {fileID: 0}
-    - target: {fileID: 8925005853213006650, guid: 2d1f25bcddabac749bf427ee585ff2f4,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.055393897
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925005853213006650, guid: 2d1f25bcddabac749bf427ee585ff2f4,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.18548657
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925005853213006651, guid: 2d1f25bcddabac749bf427ee585ff2f4,
-        type: 3}
-      propertyPath: attackRange
-      value: 0.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925005853213006651, guid: 2d1f25bcddabac749bf427ee585ff2f4,
-        type: 3}
-      propertyPath: attackOffset.x
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925005853213006651, guid: 2d1f25bcddabac749bf427ee585ff2f4,
-        type: 3}
-      propertyPath: attackOffset.y
-      value: -0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 8925005853213006655, guid: 2d1f25bcddabac749bf427ee585ff2f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1380,21 +1355,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925005853213006655, guid: 2d1f25bcddabac749bf427ee585ff2f4,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.6105354
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925005853213006655, guid: 2d1f25bcddabac749bf427ee585ff2f4,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.6105354
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925005853213006655, guid: 2d1f25bcddabac749bf427ee585ff2f4,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.6105354
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d1f25bcddabac749bf427ee585ff2f4, type: 3}
@@ -1543,12 +1503,12 @@ PrefabInstance:
     - target: {fileID: 5643355896688634298, guid: 3d6ded92b9770e448b7b252bb07a737d,
         type: 3}
       propertyPath: FirstTimeToAttack
-      value: 0.55
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5643355896688634298, guid: 3d6ded92b9770e448b7b252bb07a737d,
         type: 3}
       propertyPath: AttackRange
-      value: 0.34
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 5643355896688634300, guid: 3d6ded92b9770e448b7b252bb07a737d,
         type: 3}
