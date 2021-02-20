@@ -53,7 +53,7 @@ public class CharacterControler : MonoBehaviour
     void Update()
     {
         Vector3 realVelocity;
-        realVelocity.x = Speed * horizontal;
+        realVelocity.x = Speed * horizontal ;
         realVelocity.y = Body.velocity.y;
         realVelocity.z = 0;
 
@@ -82,11 +82,12 @@ public class CharacterControler : MonoBehaviour
             TimeToAttack = FirstTimeToAttack;
             if (Input.GetMouseButton(0))
             {
+                playersound.SoundPlay(playersound.clips[0]); //audio
                 MainAnimation.SetTrigger("attackmovement");
                 MainAnimation.Play("atack 1");
                 Debug.Log("attack on");
 
-                playersound.SoundPlay(playersound.clips[2]); //audio
+               
 
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPoint.position, AttackRange, DefineEnemy);
                 for (int i = 0; i < enemiesToDamage.Length; i++)

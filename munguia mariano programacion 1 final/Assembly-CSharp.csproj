@@ -108,6 +108,7 @@
     <Compile Include="Assets\script\Player\moving_plataform_2.cs" />
     <Compile Include="Assets\script\Player\PlayerControler.cs" />
     <Compile Include="Assets\script\Player\sound.cs" />
+    <Compile Include="Assets\stones.cs" />
     <None Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\Anywhere Door\ScreenCutoutShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/el_mu/Desktop/final programacion 1/hero-go/munguia mariano programacion 1 final/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movefowardpin : MonoBehaviour
 {
-    public int Speed;
+    public float Speed;
     private Transform pinMove;
 
 

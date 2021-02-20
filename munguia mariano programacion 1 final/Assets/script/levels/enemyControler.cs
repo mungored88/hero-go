@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class enemyControler : MonoBehaviour
 {
-    public Animation enemyanimator;
+    public Animator enemyanimator;
     public CharacterControler owner;
     private bool movement;
     public GameObject StartMove;
@@ -21,8 +21,10 @@ public class enemyControler : MonoBehaviour
     public float attackRange = 1f;
     public LayerMask attackMask;
     public Transform Player;
-    
-    
+    private float TimeToAttack;
+    public float FirstTimeToAttack;
+
+
 
 
 
@@ -86,6 +88,11 @@ public class enemyControler : MonoBehaviour
         if (Vector2.Distance(Player.position, rb.position) <= attackRange)
         {
            GetComponent<Animator>().SetBool("Attack b",true);
+           
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("Attack b", false);
         }
        
 
@@ -93,19 +100,33 @@ public class enemyControler : MonoBehaviour
     }
     public void Attack()
     {
+        
         Vector3 pos = transform.position;
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
 
-       
+        Debug.Log("ataque aa");
+
+        if (TimeToAttack <= 0)
+        {
+
+            TimeToAttack = FirstTimeToAttack;
+            Debug.Log("ataque dd");
+
             Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
             if (colInfo != null)
             {
-
+                Debug.Log("ataque loco");
                 colInfo.GetComponent<CharacterControler>().TakeDamage(attackDamage);
-
+                
             }
-      
+            
+        }
+       else
+        {
+            TimeToAttack -= Time.deltaTime;
+        } 
+            
     }
        
     public void TakeDamage(int Damage)
@@ -117,12 +138,16 @@ public class enemyControler : MonoBehaviour
         if (EnemyLife <= 1)
         {
             render.material.color = Color.red;
+            GetComponent<Animator>().SetBool("gethit", false);
         }
+        
 
         if (EnemyLife <= 0)
         {
-            GetComponent<Animator>().SetBool("isdead", true);
-            Destroy(this.gameObject);
+            render.material.color = Color.white;
+            enemyanimator.Play("enemyDie");
+            speed = 0;
+            Destroy(this.gameObject,1f);
         }
         
     }

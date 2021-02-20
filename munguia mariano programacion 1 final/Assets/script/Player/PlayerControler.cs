@@ -23,9 +23,7 @@ public class PlayerControler : MonoBehaviour
         {
 
             owner.Jump();
-        }
-
-       
+        }   
        
     }
    

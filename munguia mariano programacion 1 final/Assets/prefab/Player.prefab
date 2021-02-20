@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 9
   m_Name: attack point
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1751506141476091733}
   - component: {fileID: 1751506141476091730}
   m_Layer: 9
-  m_Name: player
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,7 +157,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &5643355896688634296
 BoxCollider2D:
@@ -232,9 +232,9 @@ MonoBehaviour:
     type: 3}
   emptyHeart: {fileID: -7669506573577929157, guid: c5ba30a8c6a87f441ae4db4aa9dbcc63,
     type: 3}
-  AttackRange: 0.33
+  AttackRange: 0.63
   Damage: 1
-  FirstTimeToAttack: 1.1
+  FirstTimeToAttack: 0.7
   attackPoint: {fileID: 1751506141980985638}
   DefineEnemy:
     serializedVersion: 2
