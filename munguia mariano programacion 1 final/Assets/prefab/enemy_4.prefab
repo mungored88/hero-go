@@ -233,9 +233,10 @@ MonoBehaviour:
   EnemyLife: 2
   attackDamage: 1
   attackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 0.8
+  attackRange: 0.92
   attackMask:
     serializedVersion: 2
     m_Bits: 512
   Player: {fileID: 5643355896688634300, guid: 3d6ded92b9770e448b7b252bb07a737d, type: 3}
+  TimeToAttack: 0
   FirstTimeToAttack: 0.7

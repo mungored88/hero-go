@@ -10,6 +10,7 @@ public class enemyControler : MonoBehaviour
     public GameObject StartMove;
     public GameObject EndMove;
     Rigidbody2D rb;
+    
 
     public float speed;
     public int EnemyLife;
@@ -21,7 +22,7 @@ public class enemyControler : MonoBehaviour
     public float attackRange = 1f;
     public LayerMask attackMask;
     public Transform Player;
-    private float TimeToAttack;
+    public float TimeToAttack;
     public float FirstTimeToAttack;
 
 
@@ -31,7 +32,7 @@ public class enemyControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        owner = this.GetComponent<CharacterControler>();
+       // owner = this.GetComponent<CharacterControler>();
         StartMove.transform.parent = null;
         EndMove.transform.parent = null;
         render = GetComponent<Renderer>();
@@ -52,7 +53,7 @@ public class enemyControler : MonoBehaviour
     {
         if(!movement)
         {
-            attackOffset = new Vector3(transform.position.x - 0.7f, transform.position.y, transform.position.z);
+            attackOffset = new Vector3(transform.localPosition.x - 0.7f, transform.position.y, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, EndMove.transform.position, speed * Time.deltaTime);
             //Debug.Log(transform.position+""+EndMove.transform.position);
             if(transform.position == EndMove.transform.position)
@@ -66,7 +67,7 @@ public class enemyControler : MonoBehaviour
         if (movement)
         {
             // Debug.Log("c");
-            attackOffset = new Vector3(transform.position.x + 0.7f, transform.position.y, transform.position.z);
+            attackOffset = new Vector3(transform.localPosition.x + 0.7f, transform.position.y, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, StartMove.transform.position, speed * Time.deltaTime);
             if (transform.position == StartMove.transform.position)
             {
@@ -85,7 +86,7 @@ public class enemyControler : MonoBehaviour
             Player = GameObject.Find("Player").transform;
         }
 
-        if (Vector2.Distance(Player.position, rb.position) <= attackRange)
+        if (Vector2.Distance(Player.position, rb.position) <= attackRange && TimeToAttack<=0)
         {
            GetComponent<Animator>().SetBool("Attack b",true);
            
@@ -94,16 +95,17 @@ public class enemyControler : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("Attack b", false);
         }
-       
 
+        TimeToAttack -= Time.deltaTime;
 
     }
     public void Attack()
     {
         
-        Vector3 pos = transform.position;
-        pos += transform.right * attackOffset.x;
-        pos += transform.up * attackOffset.y;
+        Vector3 pos = transform.localPosition;
+                       
+       
+        
 
         Debug.Log("ataque aa");
 
@@ -114,18 +116,18 @@ public class enemyControler : MonoBehaviour
             Debug.Log("ataque dd");
 
             Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+            Debug.Log(colInfo);
             if (colInfo != null)
             {
                 Debug.Log("ataque loco");
+
                 colInfo.GetComponent<CharacterControler>().TakeDamage(attackDamage);
                 
             }
             
+            
         }
-       else
-        {
-            TimeToAttack -= Time.deltaTime;
-        } 
+       
             
     }
        

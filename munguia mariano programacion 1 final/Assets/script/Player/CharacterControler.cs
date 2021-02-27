@@ -159,7 +159,7 @@ public class CharacterControler : MonoBehaviour
 
         StartCoroutine(DamageAnimation());
 
-        playersound.SoundPlay(playersound.clips[0]); //audio
+        playersound.SoundPlay(playersound.clips[2]); //audio
 
         if (Life <= 0)
         {
