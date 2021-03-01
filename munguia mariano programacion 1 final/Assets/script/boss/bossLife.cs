@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class bossLife : MonoBehaviour
@@ -7,6 +8,9 @@ public class bossLife : MonoBehaviour
 	public bool isInvulnerable = false;
 	public Animator Animacion;
 	private Renderer render;
+	public GameObject chest;
+	public GameObject[] fire;
+	public GameObject fireball;
 
 	// Update is called once per frame
 	void Update()
@@ -25,7 +29,9 @@ public class bossLife : MonoBehaviour
 		if (health <=3)
 		{
 			render.material.color = Color.yellow;
+			StartCoroutine(fireballattack());
 			Animacion.SetBool("isEtapa2",true);
+			
 		}
 		if (health <= 0)
 		{
@@ -39,10 +45,23 @@ public class bossLife : MonoBehaviour
 
 	void Die()
 	{
+		Animacion.Play("die");
+		chest.gameObject.SetActive(true);
+		Destroy(this.gameObject, 1f);
 		
-		Destroy(gameObject);
-		SceneManager.LoadScene("win");
 	}
 
+	public IEnumerator fireballattack()
+    {
+		while (true)
+		{
+			int index = Random.Range(0, fire.Length);
+			GameObject newfire = GameObject.Instantiate(fireball);
+			newfire.transform.position = fire[index].transform.position;
+
+			yield return new WaitForSeconds(2);
+		}
+    }
+	
 }
 

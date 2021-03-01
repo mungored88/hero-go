@@ -485,6 +485,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb89f06b069f7b84a89638d0efb337a5, type: 3}
+--- !u!114 &444400635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5590863964568297358, guid: 12fde3392a5e4b842a171c2fd489ca1e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1806610823450839091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &485914276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1084,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77caa2bfd5de58a4f8b4d7d63861660d, type: 3}
+--- !u!114 &890632899 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6860342969958184496, guid: 12fde3392a5e4b842a171c2fd489ca1e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1806610823450839091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &906895504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,6 +1425,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5643355896688634298, guid: 3d6ded92b9770e448b7b252bb07a737d,
+        type: 3}
+      propertyPath: swordcheat
+      value: 
+      objectReference: {fileID: 444400635}
+    - target: {fileID: 5643355896688634298, guid: 3d6ded92b9770e448b7b252bb07a737d,
+        type: 3}
+      propertyPath: heartcheat
+      value: 
+      objectReference: {fileID: 890632899}
     - target: {fileID: 5643355896688634298, guid: 3d6ded92b9770e448b7b252bb07a737d,
         type: 3}
       propertyPath: hearts.Array.data[0]
@@ -2150,7 +2184,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917145502}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6873152032001790822, guid: 29455f5099a5b384a889651f31c71f7d,
     type: 2}

@@ -218,6 +218,8 @@ MonoBehaviour:
   Body: {fileID: 5643355896688634297}
   horizontal: 0
   playersound: {fileID: 1751506141476091730}
+  swordcheat: {fileID: 0}
+  heartcheat: {fileID: 0}
   JumpForce: 3
   NumberJump: 2
   MaxJump: 2

@@ -14,6 +14,8 @@ public class CharacterControler : MonoBehaviour
     public Rigidbody2D Body;
     public float horizontal;
     public sound playersound;
+    public Image swordcheat;
+    public Image heartcheat;
 
     [Header("Jump")]
     public float JumpForce;
@@ -147,10 +149,12 @@ public class CharacterControler : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Mouse1))
         {
             Damage += 2;
+            swordcheat.gameObject.SetActive(true);
         }
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
             Life += 2;
+            heartcheat.gameObject.SetActive(true);
         }
     }
     public void TakeDamage(int damage)
